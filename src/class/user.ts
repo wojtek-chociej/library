@@ -5,9 +5,7 @@ abstract class Entity {
   public id: string | null = null;
 
   protected constructor(id?: string) {
-    if (!id) {
-      this.id = v4();
-    }
+    this.id = id ?? v4();
   }
 }
 
